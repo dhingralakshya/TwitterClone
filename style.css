@@ -1,0 +1,519 @@
+@font-face {
+    font-family: TwitterChirpExtendedHeavy;
+    src: url(https://abs.twimg.com/fonts/chirp-extended-heavy-web.woff2) format('woff2');
+    src: url(https://abs.twimg.com/fonts/chirp-extended-heavy-web.woff) format('woff');
+    font-weight: 800;
+    font-style: 'normal';
+    font-display: 'swap';
+  }
+
+  @font-face {
+    font-family: TwitterChirp;
+    src: url(https://abs.twimg.com/fonts/chirp-regular-web.woff2) format('woff2');
+    src: url(https://abs.twimg.com/fonts/chirp-regular-web.woff) format('woff');
+    font-weight: 400;
+    font-style: 'normal';
+    font-display: 'swap';
+  }
+
+  @font-face {
+    font-family: TwitterChirp;
+    src: url(https://abs.twimg.com/fonts/chirp-medium-web.woff2) format('woff2');
+    src: url(https://abs.twimg.com/fonts/chirp-medium-web.woff) format('woff');
+    font-weight: 500;
+    font-style: 'normal';
+    font-display: 'swap';
+  }
+
+  @font-face {
+    font-family: TwitterChirp;
+    src: url(https://abs.twimg.com/fonts/chirp-bold-web.woff2) format('woff2');
+    src: url(https://abs.twimg.com/fonts/chirp-bold-web.woff) format('woff');
+    font-weight: 700;
+    font-style: 'normal';
+    font-display: 'swap';
+  }
+
+  @font-face {
+    font-family: TwitterChirp;
+    src: url(https://abs.twimg.com/fonts/chirp-heavy-web.woff2) format('woff2');
+    src: url(https://abs.twimg.com/fonts/chirp-heavy-web.woff) format('woff');
+    font-weight: 800;
+    font-style: 'normal';
+    font-display: 'swap';
+  }
+
+body {
+    font-family: TwitterChirp, Roboto, Arial;
+    height: 3000px;
+    padding-left: 330px;
+    padding-right: 480px;
+    padding-top: 44px;
+}
+.header{
+    display: flex;
+    border: 1.5px solid;
+    border-color: rgb(237, 237, 237);
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    color: gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 338px;
+    right: 488px;
+    height: 50px;
+    background-color:white;
+    width: 700px;
+}
+.For-you,
+.Following{
+    flex:1;
+    height: 40px;
+    padding-top: 17px;
+}
+.For-you:hover,
+.Following:hover{
+    background-color: lightgray;
+    transition: 0.2s;
+}
+.setting
+{
+    margin-right: 10px;
+    width: 35px;
+    background-color: white;
+    border: none;
+    padding-top: 5px;
+}
+.setting:hover{
+    background-color: lightgray;
+    border-radius: 18px;
+}
+.tweet-section
+{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+.tweet{
+    display:flex;
+    border: 1.5px solid;
+    border-color: rgb(237, 237, 237);
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.show-more{
+    text-align: center;
+    color: rgb(0, 178, 237);
+    border: 1.5px solid;
+    border-color: rgb(237, 237, 237);
+}
+.show-more:hover{
+    background-color:rgb(246, 243, 243);
+}
+.profile img{
+    width:45px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5px;
+}
+.profile_picture img{
+    width:38px;
+    border-radius: 25px;
+    margin-right: 10px;
+    line-height: 0px;
+}
+hr{
+    display: block;
+    border: 1px solid;
+    border-color: rgb(243, 243, 243);
+}
+.toolbar {
+    fill: rgb(0, 191, 255);
+    display: flex;
+    justify-content: left;
+    gap: 18px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.media,
+.GIF,
+.Poll,
+.Emoji,
+.schedule{
+    border-radius: 12px;
+    padding: 5px;
+}
+.media:hover,
+.GIF:hover,
+.Poll:hover,
+.Emoji:hover,
+.schedule:hover{
+    background-color: rgb(234, 248, 252);
+    fill: rgb(67, 188, 228);
+}
+.location{
+    fill: rgb(154, 214, 234);
+}
+.post-button button{
+    background-color: rgb(93, 190, 255);
+    color: white;
+    width: 70px;
+    height: 36px;
+    border: none;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.post-button{
+    position: relative;
+    left: 280px;
+}
+.profile_picture{
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.first{
+    display: flex;
+    border: 1.5px solid;
+    border-color: rgb(237, 237, 237);
+}
+.first:hover{
+    background-color:rgb(246, 243, 243);
+}
+.verified svg{
+    fill: rgb(0, 191, 255);
+    width: 20px;
+}
+.details {
+    display: flex;
+}
+.name p,
+.verified,
+.user p{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    vertical-align: top;
+}
+.name{
+    font-weight: 500;
+}
+.user{
+    color: gray;
+    display: flex;
+    flex: 1;
+}
+.text p{
+    color: rgb(102, 102, 102);
+    font-size: large;
+}
+.text{
+    margin-top: -10px;
+    width:500px;
+}
+.threedots{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.threedots svg{
+    width: 20px;
+    border-radius: 12.5px;
+    padding: 5px;
+}
+.threedots:hover svg{
+    background-color: rgb(210, 245, 255);
+    fill: rgb(67, 188, 228);
+}
+.image img{
+    border-radius: 25px;
+    width: 100%;
+}
+.image{
+    margin-right: 20px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.like,
+.repost,
+.reply,
+.view,
+.bookmark-share
+{
+    margin-top: 4px;
+    display: flex;
+}
+.like-button,
+.repost-button,
+.reply-button,
+.view-button
+{
+    width: 28px;
+    align-items: top;
+    margin-right: -5px;
+}
+.bookmark-button,
+.share-button{
+    width: 30px;
+    align-items: top;
+    margin-right: 0px;
+}
+.bookmark-button{
+    margin-right: 2px;
+}
+.like-button svg,
+.repost-button svg,
+.reply-button svg,
+.view-button svg,
+.bookmark-button svg,
+.share-button svg
+{
+    fill:  rgb(143, 143, 143);
+    border-radius: 14px;
+    padding: 5px;
+}
+.like-no,
+.repost-no,
+.reply-no,
+.view-no{
+    padding: 5px;
+    font-size: 14px;
+    color: rgb(143, 143, 143);
+}
+.reply:hover div svg,
+.view:hover div svg{
+    background-color: rgb(194, 240, 255);
+    fill: rgb(67, 188, 228);
+}
+.bookmark-button:hover svg,
+.share-button:hover svg{
+    background-color: rgb(194, 240, 255);
+    fill: rgb(67, 188, 228);
+}
+.repost:hover div svg{
+    background-color: rgb(216, 252, 216);
+    fill: rgb(5, 234, 5);
+}
+.like:hover div svg
+{
+    background-color: pink;
+    fill: rgb(255, 98, 124);
+}
+.reply:hover span,
+.view:hover span
+{
+    color: rgb(67, 188, 228);
+}
+.repost:hover span{
+    color:rgb(5, 234, 5) ;
+}
+.like:hover span{
+    color: rgb(255, 98, 124);
+}
+a{
+    color: rgb(56, 205, 255);
+}
+.toolbar svg{
+    width: 20px;
+}
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+    margin-left: 100px;
+}
+.sidebar-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.logo{
+    width: 40px;
+    margin-bottom: 7px;
+}
+.Home,
+.explore,
+.notification,
+.messages,
+.grok,
+.lists,
+.id,
+.more{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    border: 1px solid;
+    border-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+.Home:hover,
+.explore:hover,
+.notification:hover,
+.messages:hover,
+.grok:hover,
+.lists:hover,
+.id:hover,
+.more:hover{
+    border-radius: 24px;
+    background-color: rgb(222, 221, 221);
+    position: relative;
+    width: fit-content;
+    padding-right: 15px;
+}
+.detail{
+    color: rgb(108, 108, 108);
+    font-size: 19px;
+    display: flex;
+}
+.icon{
+    width: 24px;
+}
+.post-sidebar button{
+    
+    background-color: rgb(38, 168, 255);
+    color: white;
+    width: 225px;
+    height: 47px;
+    border: none;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    
+}
+.profile-sidebar{
+    display: flex;
+}
+.profile-name-sidebar{
+    display: flex;
+    flex-direction: column;
+}
+.name-sidebar{
+    font-weight: 650;
+}
+.user-sidebar{
+    color: gray;
+}
+.profile-img-sidebar img{
+    width:45px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+.threedots-sidebar svg{
+        width: 20px;
+        border-radius: 12.5px;
+        padding: 5px;
+}
+.threedots-sidebar{
+    position:absolute;
+    right: 0px;
+}
+.right-section{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: white;
+    margin-right: 100px;
+    margin-left: 50px;
+    width: 300px;
+}
+.subscribe{
+    width: 300px;
+    border: 1px solid;
+    border-color: white ;   
+    margin-top: 35px;
+    background-color: rgb(236, 235, 235);
+    border-radius: 20px;
+    padding: 10px;
+}
+.heading {
+    font-size: 500;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.text{
+    font-size: 200;
+    width: 300px;
+}
+.search-bar{
+    border: 1px solid;
+    border-color: rgb(236, 235, 235);
+    border-radius: 100px;
+    background-color: rgb(236, 235, 235);
+    width: 250px;
+    height: 25px;
+    padding-top: 3px;
+}
+.search-bar::placeholder{
+    color: grey;
+}
+.search-button svg{
+    width: 20px;
+    fill: grey;
+    padding: 5px;
+}
+.search-section{
+    border: 1px solid;
+    border-color: white;
+    background-color: rgb(236, 235, 235);
+    border-radius: 100px;
+    padding: 3px;
+    margin-top: 10px;
+    display: flex;
+}
+.trending{
+    width: 300px;
+    margin-top: 20px;
+    border: 1px solid;
+    border-color: white;
+    background-color: rgb(236, 235, 235);
+    border-radius: 20px;
+    padding: 10px;
+}
+.stream{
+    display: flex;
+    margin-bottom: 4px;
+}
+.top{
+    color: gray;
+    font-size: 14px;
+}
+.main{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.post-no{
+    color: gray;
+    font-size: 13px;
+}
+.threedots-trending svg{
+    width: 20px;
+    border-radius: 13px;
+    padding: 5px;
+    position: absolute;
+    right: 0px;
+    margin-top: -2px;
+    fill: gray;
+}
+.threedots-trending :hover{
+    background-color: rgb(210, 245, 255);
+    fill: rgb(67, 188, 228);
+}
+@media(max-width:1450px)
+{
+    .right-section{
+        display: none;
+    }
+}
